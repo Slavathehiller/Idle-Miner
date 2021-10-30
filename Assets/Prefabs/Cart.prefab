@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 2779624160568641790}
   - component: {fileID: 2779624160568641791}
   - component: {fileID: 2779624160568641789}
+  - component: {fileID: 4166685020021569857}
   m_Layer: 0
   m_Name: Cart
   m_TagString: Untagged
@@ -211,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd4cd552fb2a9d478ef10c77108d4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CartNumber: 0
   emptySprite: {fileID: 21300000, guid: 43fb1c22e2b37ef4db2339c196730505, type: 3}
   fullSprite: {fileID: 21300000, guid: ee637bdd93279ab4a838f6aa68d8c507, type: 3}
 --- !u!95 &2779624160568641789
@@ -221,7 +223,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2779624160568641784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: abc1c8e7892ee4d40a2bd50ea45c4922, type: 2}
   m_CullingMode: 0
@@ -232,6 +234,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &4166685020021569857
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2779624160568641784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.001096487, y: 0.043864608}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3180184, y: 0.8464737}
+  m_EdgeRadius: 0
 --- !u!1 &2779624160819115517
 GameObject:
   m_ObjectHideFlags: 0
