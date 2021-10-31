@@ -25,8 +25,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -54,6 +57,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -65,26 +70,14 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1512}
-    - Class: 114
       Script: {instanceID: 1880}
-    - Class: 114
-      Script: {instanceID: 2202}
-    - Class: 114
-      Script: {instanceID: 2618}
     - Class: 114
       Script: {instanceID: 2778}
     - Class: 114
-      Script: {instanceID: 2996}
-    - Class: 114
       Script: {instanceID: 3244}
-    - Class: 114
-      Script: {instanceID: 3356}
     - Class: 114
       Script: {instanceID: 3862}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -93,12 +86,6 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/StartScene.unity:
     - Class: 1
@@ -240,7 +227,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: cf60727f48add18bef22413b3a78b382
+      Hash: 042da6e84065363a29d2f0dc7e0138a9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cart

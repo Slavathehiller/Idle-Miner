@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CartNumber: 0
+  timeToLoad: 2
   emptySprite: {fileID: 21300000, guid: 43fb1c22e2b37ef4db2339c196730505, type: 3}
   fullSprite: {fileID: 21300000, guid: ee637bdd93279ab4a838f6aa68d8c507, type: 3}
 --- !u!95 &2779624160568641789

@@ -589,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cart (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2779624160568641789, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2779624160568641790, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -641,6 +645,14 @@ PrefabInstance:
       propertyPath: fullSprite
       value: 
       objectReference: {fileID: 21300000, guid: 80abac58186f97742b3dd2ed7e0316c9, type: 3}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: halfSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f9b4feb4569e8084181bbaef1891b91d, type: 3}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: quaterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d51eee68066406f44be657e6af1868aa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
 --- !u!1 &940612185
@@ -801,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018848410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -4.61, z: 0}
+  m_LocalPosition: {x: 0.15, y: -4.58, z: 0}
   m_LocalScale: {x: 1.0642, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -952,6 +964,14 @@ PrefabInstance:
       propertyPath: fullSprite
       value: 
       objectReference: {fileID: 21300000, guid: dfc04fbc6240bc34c92caf8213668110, type: 3}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: halfSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bfbec3f49d9cb0f419b3d24323e6b421, type: 3}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: quaterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b293c04e70fc16a48a9f9ce8e2258f54, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
 --- !u!1001 &1125736593
@@ -1009,6 +1029,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: halfSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58a3b44b4fdba00419229c4edb22fe79, type: 3}
+    - target: {fileID: 2779624160568641791, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
+      propertyPath: quaterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9c8818471a4b7fc4fba308ea67c2092d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3af832b676453242bd7a3a5da354a3c, type: 3}
 --- !u!1 &1133204579
