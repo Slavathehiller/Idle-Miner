@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cart : MonoBehaviour
 {
     public int CartNumber;
+    public GameObject gameController;
 
     const int moveReady = 0;
     const int moveUnload = 1;
@@ -20,6 +21,8 @@ public class Cart : MonoBehaviour
     const float timeToUnload = 1f;
     float loadingDuration = 0f;
     int moveDirection = moveReady;
+    public int cartCapacity = 5;
+    public int ResType;
 
     public Sprite emptySprite;
     public Sprite fullSprite;
@@ -89,6 +92,7 @@ public class Cart : MonoBehaviour
             {
                 loadingDuration = 0;
                 transform.Find("CartTop").gameObject.GetComponent<SpriteRenderer>().sprite = emptySprite;
+		gameController.GetComponent<GameController>().ResourceCount[ResType] += cartCapacity;
                 moveDirection = moveReady;
 
             }
