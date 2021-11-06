@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-   
-   public int[] ResourceCount = new int[4];
    public Text CoalCountText;
    public Text IronCountText;
    public Text GoldCountText;
    public Text DiamondCountText;
+   public Text MoneyCountText = null;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CoalCountText.text = ResourceCount[0].ToString();
-        IronCountText.text = ResourceCount[1].ToString();
-        GoldCountText.text = ResourceCount[2].ToString();
-        DiamondCountText.text = ResourceCount[3].ToString();
+        CoalCountText.text = Stash.ResourceCount[ResourceType.Coal].ToString();
+        IronCountText.text = Stash.ResourceCount[ResourceType.IronOre].ToString();
+        GoldCountText.text = Stash.ResourceCount[ResourceType.GoldOre].ToString();
+        DiamondCountText.text = Stash.ResourceCount[ResourceType.Diamond].ToString();
+        if(MoneyCountText != null)
+            MoneyCountText.text = Stash.CoinsCount.ToString();
     }
 }
