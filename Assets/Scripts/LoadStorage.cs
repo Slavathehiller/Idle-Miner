@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LoadStorage : MonoBehaviour
 {
+    public GameObject storagePanel;
+    public GameObject resourcePanel;
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("Storage", LoadSceneMode.Additive);
+	//UIPanel.Find("ResourcePanel").SetActive(false);
+	//UIPanel.Find("StoragePanel").SetActive(true);
+	storagePanel.SetActive(true);
+	resourcePanel.SetActive(false);
+        //SceneManager.LoadScene("Storage", LoadSceneMode.Additive);
     }
 }

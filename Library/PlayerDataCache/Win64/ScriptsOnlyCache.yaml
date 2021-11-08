@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BuildBridge
     - Cart
     - Exit
     - GameController
@@ -8,6 +9,8 @@ ScriptsOnlyBuild:
     - LoadStorage
     - ReturnToMain
     - ReturnToMenu
+    - SellOre
+    - Sprites
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -68,25 +71,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1458}
+    - Class: 114
       Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1872}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 1910}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2174}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 3330}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 5432}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 23372}
+      Script: {instanceID: 3444}
+    - Class: 114
+      Script: {instanceID: 3452}
+    - Class: 114
+      Script: {instanceID: 3592}
+    - Class: 114
+      Script: {instanceID: 4000}
+    - Class: 114
+      Script: {instanceID: 5446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -123,23 +136,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1458}
+    - Class: 114
       Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2674}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 2846}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 3240}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3272}
     - Class: 114
-      Script: {instanceID: 3268}
+      Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 3330}
-    - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -178,8 +191,28 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25680}
+      Script: {instanceID: 1458}
+    - Class: 114
+      Script: {instanceID: 1524}
+    - Class: 114
+      Script: {instanceID: 2206}
+    - Class: 114
+      Script: {instanceID: 2678}
+    - Class: 114
+      Script: {instanceID: 2850}
+    - Class: 114
+      Script: {instanceID: 3082}
+    - Class: 114
+      Script: {instanceID: 3334}
+    - Class: 114
+      Script: {instanceID: 3452}
+    - Class: 114
+      Script: {instanceID: 3592}
+    - Class: 114
+      Script: {instanceID: 5446}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -189,7 +222,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -270,6 +315,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 24a070dddd4f9700001cf58b34ff61ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadStorage
+  - hash:
+      serializedVersion: 2
       Hash: 2b6365ca6291341fc99ba8f609ca8ab0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -282,16 +333,22 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: ae8c2a3e706a644fd2a30e70db8cdbb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Sprites
+  - hash:
+      serializedVersion: 2
+      Hash: ab8e5d0ed20792f49a9e1bf9ad3d80b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SellOre
+  - hash:
+      serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -450,6 +507,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: a5b80af8eb6b11a7d125c515f50c714f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuildBridge
+  - hash:
+      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -466,6 +529,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 24a070dddd4f9700001cf58b34ff61ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReturnToMain
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -730,21 +799,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadStorage
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReturnToMain
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
   - Assets/Scenes/Storage.unity
-  playerPath: E:/Unity Projects/Idle Miner/Release/Idle Miner.exe
+  playerPath: G:/UnityProjects/IdleMiner/Release/Idle Miner.exe
