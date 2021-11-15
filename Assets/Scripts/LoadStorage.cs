@@ -7,12 +7,11 @@ public class LoadStorage : MonoBehaviour
 {
     public GameObject storagePanel;
     public GameObject resourcePanel;
+    public GameObject controllPanel;
     private void OnMouseDown()
     {
-	//UIPanel.Find("ResourcePanel").SetActive(false);
-	//UIPanel.Find("StoragePanel").SetActive(true);
-	storagePanel.SetActive(true);
-	resourcePanel.SetActive(false);
-        //SceneManager.LoadScene("Storage", LoadSceneMode.Additive);
+	    storagePanel.SetActive(true);
+	    resourcePanel.SetActive(false);
+        controllPanel.SetActive(false);
     }
 }
