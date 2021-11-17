@@ -33,6 +33,16 @@ public class BuildBridge : MonoBehaviour
     private void Update()
     {
         int price = BuildPrice();
-        boxCollider.enabled = price <= Stash.CoinsCount;
+        if(price <= Stash.CoinsCount)
+        {
+            boxCollider.enabled = true;
+            gameObject.GetComponent<SpriteRenderer>().sprite = SpriteStorage.GetComponent<Sprites>().Build_Enabled;
+        }
+        else
+        {
+            boxCollider.enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = SpriteStorage.GetComponent<Sprites>().Build_Disabled;
+        }
+        
     }
 }

@@ -22,6 +22,9 @@ public class Cart : MonoBehaviour
     int moveDirection = moveReady;
     public int cartCapacity = 5;
     public int ResType;
+    private float StartX = -2.8f;
+    private float EndX = 5.7f;
+    private float DistanceBetweenCarts = 4.6f;
 
     public Sprite emptySprite;
     public Sprite fullSprite;
@@ -31,9 +34,12 @@ public class Cart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = new Vector3(-3f, CartNumber * -5f, 0);
-        endPosition = new Vector3(5.7f, CartNumber * -5f, 0);
-        transform.position = startPosition;
+        transform.position = new Vector3(StartX, 0, 0);
+        transform.Translate(new Vector3(0, CartNumber * -DistanceBetweenCarts, 0), Space.Self);
+        //startPosition = new Vector3(StartX, CartNumber * -DistanceBetweenCarts, 0);
+        startPosition = transform.position;
+        endPosition = new Vector3(EndX, startPosition.y, 0);
+        //transform.position = startPosition;
         Time.timeScale = 1f;
     }
 
@@ -49,6 +55,7 @@ public class Cart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float MoveDistance = cartSpeed * Time.deltaTime;
         if (moveDirection == moveLoad)
         {
             if (loadingDuration >= timeToLoad)
@@ -65,24 +72,25 @@ public class Cart : MonoBehaviour
 
         if (moveDirection == moveForward)
         {
-            if (Vector3.Distance(transform.position, endPosition) < 0.001f)           
+            if (Mathf.Abs(transform.position.x - endPosition.x) < MoveDistance)
             {
                 moveDirection = moveLoad;
             }
             else
-                transform.position = Vector3.MoveTowards(transform.position, endPosition, cartSpeed * Time.deltaTime);
+                //transform.position = Vector3.MoveTowards(transform.position, endPosition, cartSpeed * Time.deltaTime);
+                transform.Translate(new Vector3(MoveDistance, 0, 0));
         }
 
         
         if (moveDirection == moveBackward)
         {
-            if (Vector3.Distance(transform.position, startPosition) < 0.001f)
+            if (Mathf.Abs(transform.position.x - startPosition.x) < MoveDistance)
             {
                 moveDirection = moveUnload;
                 GetComponent<Animator>().enabled = false;
             }
             else
-                transform.position = Vector3.MoveTowards(transform.position, startPosition, cartSpeed * Time.deltaTime);
+                transform.Translate(new Vector3(-MoveDistance, 0, 0));
         }
 
         if(moveDirection == moveUnload)

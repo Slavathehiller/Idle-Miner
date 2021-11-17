@@ -63,10 +63,10 @@
     <Compile Include="Assets\Scripts\ReturnToMain.cs" />
     <Compile Include="Assets\Scripts\ReturnToMenu.cs" />
     <Compile Include="Assets\Scripts\Consts.cs" />
+    <Compile Include="Assets\Scripts\Scroll.cs" />
     <Compile Include="Assets\Scripts\Stash.cs" />
     <Compile Include="Assets\Scripts\ResourceType.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\Scroll.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
