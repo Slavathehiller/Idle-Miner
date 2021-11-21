@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4567867669444739365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4567867669444739367}
+  - component: {fileID: 4567867669444739364}
+  m_Layer: 0
+  m_Name: SpriteStorage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4567867669444739367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4567867669444739365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.067212, y: 0.846804, z: 28.220707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4567867669444739364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4567867669444739365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9357060ca67f64c86be2e737f8d910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Builded_Bridge: {fileID: 21300000, guid: 11c8381f0f1834b42ab34d84e65ed50b, type: 3}
+  Build_Enabled: {fileID: 21300000, guid: c9d110efe2ad14f44addac49f7b5f089, type: 3}
+  Build_Disabled: {fileID: 21300000, guid: 621f79846d460894cb10ab98e656e7f3, type: 3}
+  Full_Coal: {fileID: 21300000, guid: ee637bdd93279ab4a838f6aa68d8c507, type: 3}
+  Full_Iron: {fileID: 21300000, guid: dfc04fbc6240bc34c92caf8213668110, type: 3}
+  Full_Gold: {fileID: 21300000, guid: 80abac58186f97742b3dd2ed7e0316c9, type: 3}
+  Full_Diamond: {fileID: 21300000, guid: 529d7af510ba8de4fb26c6c3bf3fe175, type: 3}
+  Half_Coal: {fileID: 21300000, guid: 58a3b44b4fdba00419229c4edb22fe79, type: 3}
+  Half_Iron: {fileID: 21300000, guid: bfbec3f49d9cb0f419b3d24323e6b421, type: 3}
+  Half_Gold: {fileID: 21300000, guid: f9b4feb4569e8084181bbaef1891b91d, type: 3}
+  Half_Diamond: {fileID: 21300000, guid: f31c4aca26795ea448d9dbf87134d68a, type: 3}
+  Quarter_Coal: {fileID: 21300000, guid: 9c8818471a4b7fc4fba308ea67c2092d, type: 3}
+  Quarter_Iron: {fileID: 21300000, guid: b293c04e70fc16a48a9f9ce8e2258f54, type: 3}
+  Quarter_Gold: {fileID: 21300000, guid: d51eee68066406f44be657e6af1868aa, type: 3}
+  Quarter_Diamond: {fileID: 21300000, guid: d29dfb9cb2e5a294293c2e63ef9384b9, type: 3}

@@ -12,8 +12,8 @@ public class Cart : MonoBehaviour
     const int moveBackward = 3;
     const int moveLoad = 4;
 
-    Vector3 startPosition;
-    Vector3 endPosition;
+    float startPosition;
+    float endPosition = 5.7f;
 
     float cartSpeed = 4f;
     public float timeToLoad = 2f;
@@ -22,25 +22,21 @@ public class Cart : MonoBehaviour
     int moveDirection = moveReady;
     public int cartCapacity = 5;
     public int ResType;
-    private float StartX = -2.8f;
-    private float EndX = 5.7f;
-    private float DistanceBetweenCarts = 4.6f;
+    public GameObject SpriteStorage;
 
     public Sprite emptySprite;
-    public Sprite fullSprite;
-    public Sprite halfSprite;
-    public Sprite quaterSprite;
-
-    // Start is called before the first frame update
+    Sprite fullSprite;
+    Sprite halfSprite;
+    Sprite quaterSprite;
+     
     void Start()
     {
-        transform.position = new Vector3(StartX, 0, 0);
-        transform.Translate(new Vector3(0, CartNumber * -DistanceBetweenCarts, 0), Space.Self);
-        //startPosition = new Vector3(StartX, CartNumber * -DistanceBetweenCarts, 0);
-        startPosition = transform.position;
-        endPosition = new Vector3(EndX, startPosition.y, 0);
-        //transform.position = startPosition;
+        startPosition = transform.position.x;
         Time.timeScale = 1f;
+        var resourcesSprites = SpriteStorage.GetComponent<Sprites>().getResourceSprites(ResType);
+        fullSprite = resourcesSprites[0];
+        halfSprite = resourcesSprites[1];
+        quaterSprite = resourcesSprites[2];
     }
 
     private void OnMouseDown()
@@ -52,7 +48,6 @@ public class Cart : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         float MoveDistance = cartSpeed * Time.deltaTime;
@@ -72,7 +67,7 @@ public class Cart : MonoBehaviour
 
         if (moveDirection == moveForward)
         {
-            if (Mathf.Abs(transform.position.x - endPosition.x) < MoveDistance)
+            if (Mathf.Abs(transform.position.x - endPosition) < MoveDistance)
             {
                 moveDirection = moveLoad;
             }
@@ -84,7 +79,7 @@ public class Cart : MonoBehaviour
         
         if (moveDirection == moveBackward)
         {
-            if (Mathf.Abs(transform.position.x - startPosition.x) < MoveDistance)
+            if (Mathf.Abs(transform.position.x - startPosition) < MoveDistance)
             {
                 moveDirection = moveUnload;
                 GetComponent<Animator>().enabled = false;
