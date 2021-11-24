@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ReturnToMain : MonoBehaviour
 {
-    public GameObject storagePanel;
+    public GameObject selfPanel;
     public GameObject resourcePanel;
     public GameObject controllPanel;
     public GameObject interfacePanel;
     private void OnMouseDown()
     {
-	    storagePanel.SetActive(false);
+	    selfPanel.SetActive(false);
 	    resourcePanel.SetActive(true);
         controllPanel.SetActive(true);
         interfacePanel.SetActive(true);

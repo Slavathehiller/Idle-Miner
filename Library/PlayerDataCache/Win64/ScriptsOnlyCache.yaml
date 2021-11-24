@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - LoadStorage
     - ReturnToMain
     - ReturnToMenu
+    - Scroll
     - SellOre
     - Sprites
     Unity.2D.Animation.Editor.dll:
@@ -73,33 +74,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 1872}
+      Script: {instanceID: 1892}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2194}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3592}
+      Script: {instanceID: 3612}
     - Class: 114
-      Script: {instanceID: 4000}
+      Script: {instanceID: 4020}
     - Class: 114
-      Script: {instanceID: 5446}
+      Script: {instanceID: 5022}
+    - Class: 114
+      Script: {instanceID: 5468}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -138,78 +141,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3260}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3452}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Storage.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1458}
-    - Class: 114
-      Script: {instanceID: 1524}
-    - Class: 114
-      Script: {instanceID: 2206}
-    - Class: 114
-      Script: {instanceID: 2678}
-    - Class: 114
-      Script: {instanceID: 2850}
-    - Class: 114
-      Script: {instanceID: 3082}
-    - Class: 114
-      Script: {instanceID: 3334}
-    - Class: 114
-      Script: {instanceID: 3452}
-    - Class: 114
-      Script: {instanceID: 3592}
-    - Class: 114
-      Script: {instanceID: 5446}
+      Script: {instanceID: 3472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -315,13 +261,13 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 24a070dddd4f9700001cf58b34ff61ba
+      Hash: 87e42b774a04ef24e539828d35ec519f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LoadStorage
   - hash:
       serializedVersion: 2
-      Hash: 2b6365ca6291341fc99ba8f609ca8ab0
+      Hash: b3f74cc4099d1e7ab36b832846625a59
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cart
@@ -333,7 +279,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: ae8c2a3e706a644fd2a30e70db8cdbb8
+      Hash: 3882d54c2928085b558d197f8c8fb7e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sprites
@@ -531,7 +477,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 24a070dddd4f9700001cf58b34ff61ba
+      Hash: 87e42b774a04ef24e539828d35ec519f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReturnToMain
@@ -729,6 +675,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: 3e6bccb622e0f57492d0ac9460ee13b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scroll
+  - hash:
+      serializedVersion: 2
       Hash: 28cfb4bd305dd11c6326cc3ee7c14138
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -803,5 +755,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
-  - Assets/Scenes/Storage.unity
   playerPath: G:/UnityProjects/IdleMiner/Release/Idle Miner.exe
