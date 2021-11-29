@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stash
 {
-    public static int CoinsCount;
-    public static int[] ResourceCount = new int[4];
-    public static int[] ResourcePrices = new int[4] { 1, 3, 5, 10};
+    public static int CoinsCount = 100;
+    public static int[] ResourceCount = new int[7];
+    public static int[] ResourcePrices = new int[7] { 1, 3, 5, 10, 15, 30, 60};
 }

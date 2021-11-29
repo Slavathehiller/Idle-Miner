@@ -8,6 +8,9 @@ public static class ResourceType
     public static int IronOre = 1;
     public static int GoldOre = 2;
     public static int Diamond = 3;
-    public static int Coins = 4;
+    public static int IronBar = 4;
+    public static int GoldBar = 5;
+    public static int Brilliant = 6;
+    public static int Coins = 7;
 
 }

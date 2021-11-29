@@ -6,14 +6,16 @@ using UnityEngine.SceneManagement;
 public class LoadWindow : MonoBehaviour
 {
     public GameObject selfPanel;
-    public GameObject resourcePanel;
-    public GameObject controllPanel;
+    public GameObject concurrentPanel;
+    //public GameObject resourcePanel;
+    //public GameObject controllPanel;
     public GameObject interfacePanel;
     public void OnClick()
     {
 	    selfPanel.SetActive(true);
-	    resourcePanel.SetActive(false);
-        controllPanel.SetActive(false);
+        concurrentPanel.SetActive(false);
+        //resourcepanel.setactive(false);
+        //   controllpanel.setactive(false);
         interfacePanel.SetActive(false);
     }
 }

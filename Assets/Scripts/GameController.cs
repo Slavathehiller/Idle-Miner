@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-   public Text CoalCountText;
-   public Text IronCountText;
-   public Text GoldCountText;
-   public Text DiamondCountText;
-   public Text MoneyCountText = null;
+    public Text CoalCountText;
+    public Text IronCountText;
+    public Text GoldCountText;
+    public Text DiamondCountText;
+    public Text IronBarCountText;
+    public Text GoldBarCountText;
+    public Text BrilliantCountText;
+    public Text MoneyCountText = null;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -20,11 +23,20 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CoalCountText.text = Stash.ResourceCount[ResourceType.Coal].ToString();
-        IronCountText.text = Stash.ResourceCount[ResourceType.IronOre].ToString();
-        GoldCountText.text = Stash.ResourceCount[ResourceType.GoldOre].ToString();
-        DiamondCountText.text = Stash.ResourceCount[ResourceType.Diamond].ToString();
-        if(MoneyCountText != null)
+        SetAmount(CoalCountText, ResourceType.Coal);
+        SetAmount(IronCountText, ResourceType.IronOre);
+        SetAmount(GoldCountText, ResourceType.GoldOre);
+        SetAmount(DiamondCountText, ResourceType.Diamond);
+        SetAmount(IronBarCountText, ResourceType.IronBar);
+        SetAmount(GoldBarCountText, ResourceType.GoldBar);
+        SetAmount(BrilliantCountText, ResourceType.Brilliant);
+        if (MoneyCountText != null)
             MoneyCountText.text = Stash.CoinsCount.ToString();
+    }
+
+    private void SetAmount(Text text, int resIndex)
+    {
+        if(text != null)
+            text.text = Stash.ResourceCount[resIndex].ToString();
     }
 }

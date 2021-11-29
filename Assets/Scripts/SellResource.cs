@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SellOre : MonoBehaviour
+public class SellResource : MonoBehaviour
 {
     public int ResType;
     public void OnClick()
