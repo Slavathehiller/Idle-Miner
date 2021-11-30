@@ -26,16 +26,12 @@ public class Sprites : MonoBehaviour
         {
             case 0:
                 return new Sprite[3] { Full_Coal, Half_Coal, Quarter_Coal };
-                break;
             case 1:
                 return new Sprite[3] { Full_Iron, Half_Iron, Quarter_Iron };
-                break;
             case 2:
                 return new Sprite[3] { Full_Gold, Half_Gold, Quarter_Gold };
-                break;
             case 3:
                 return new Sprite[3] { Full_Diamond, Half_Diamond, Quarter_Diamond };
-                break;
             default:
                 return null;
         }

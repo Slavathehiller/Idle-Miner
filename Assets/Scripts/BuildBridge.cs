@@ -15,7 +15,6 @@ public class BuildBridge : MonoBehaviour
         Stash.CoinsCount -= BuildPrice();
         Bridge_Object.GetComponent<SpriteRenderer>().sprite = SpriteStorage.GetComponent<Sprites>().Builded_Bridge;
         Cart.SetActive(true);
-        //gameObject.SetActive(false);
         Destroy(gameObject);
     }
 

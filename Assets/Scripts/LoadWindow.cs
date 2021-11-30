@@ -9,13 +9,15 @@ public class LoadWindow : MonoBehaviour
     public GameObject concurrentPanel;
     //public GameObject resourcePanel;
     //public GameObject controllPanel;
-    public GameObject interfacePanel;
-    public void OnClick()
+    //public GameObject interfacePanel;
+    public void OnMouseDown()
     {
-	    selfPanel.SetActive(true);
-        concurrentPanel.SetActive(false);
+        if (selfPanel != null)
+	        selfPanel.SetActive(true);
+        if (concurrentPanel != null)
+            concurrentPanel.SetActive(false);
         //resourcepanel.setactive(false);
         //   controllpanel.setactive(false);
-        interfacePanel.SetActive(false);
+        //interfacePanel.SetActive(false);
     }
 }
