@@ -19,6 +19,8 @@ public class Sprites : MonoBehaviour
     public Sprite Quarter_Iron;
     public Sprite Quarter_Gold;
     public Sprite Quarter_Diamond;
+    public Sprite Idle_Forge;
+    public Sprite Busy_Forge;
 
     public Sprite[] getResourceSprites(int resourceNumber) 
     {

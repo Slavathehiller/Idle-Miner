@@ -58,3 +58,5 @@ MonoBehaviour:
   Quarter_Iron: {fileID: 21300000, guid: b293c04e70fc16a48a9f9ce8e2258f54, type: 3}
   Quarter_Gold: {fileID: 21300000, guid: d51eee68066406f44be657e6af1868aa, type: 3}
   Quarter_Diamond: {fileID: 21300000, guid: d29dfb9cb2e5a294293c2e63ef9384b9, type: 3}
+  Idle_Forge: {fileID: 21300000, guid: 12a20d8450170844998becdda41162e5, type: 3}
+  Busy_Forge: {fileID: 21300000, guid: f530ed16655a52f42934f0aa9506f0c7, type: 3}
