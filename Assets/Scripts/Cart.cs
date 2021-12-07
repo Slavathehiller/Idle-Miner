@@ -13,7 +13,7 @@ public class Cart : MonoBehaviour
     const int moveLoad = 4;
 
     float startPosition;
-    float endPosition = 5.7f;
+    float endPosition = 6.7f;
 
     float cartSpeed = 4f;
     public float timeToLoad = 2f;

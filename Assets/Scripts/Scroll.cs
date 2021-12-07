@@ -5,6 +5,10 @@ using UnityEngine;
 public class Scroll : MonoBehaviour
 {
     public GameObject ScrollingObject;
+
+
+    public float highTop = -6.5f;
+
     void Start()
     {
         
@@ -17,7 +21,7 @@ public class Scroll : MonoBehaviour
 
     public void ScrollUp()
     {
-        if (ScrollingObject.gameObject.transform.position.y > -8.5) 
+        if (ScrollingObject.gameObject.transform.position.y > highTop) 
         { 
             ScrollingObject.transform.Translate(new Vector3(0, -5), Space.World);
         }

@@ -4,14 +4,15 @@ ScriptsOnlyBuild:
     - BuildBridge
     - Cart
     - Exit
+    - Forge
+    - Fuse
     - GameController
     - LoadGame
-    - LoadStorage
-    - ReturnToMain
     - ReturnToMenu
     - Scroll
-    - SellOre
+    - SellResource
     - Sprites
+    - SwichWindows
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -74,35 +75,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 1892}
+      Script: {instanceID: 1910}
     - Class: 114
-      Script: {instanceID: 1930}
+      Script: {instanceID: 2174}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 2206}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 4004}
     - Class: 114
-      Script: {instanceID: 4020}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 5022}
+      Script: {instanceID: 5006}
     - Class: 114
-      Script: {instanceID: 5468}
+      Script: {instanceID: 5452}
+    - Class: 114
+      Script: {instanceID: 68458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,21 +144,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1544}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 2698}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3292}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -261,12 +264,6 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 87e42b774a04ef24e539828d35ec519f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadStorage
-  - hash:
-      serializedVersion: 2
       Hash: b3f74cc4099d1e7ab36b832846625a59
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -279,7 +276,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 3882d54c2928085b558d197f8c8fb7e8
+      Hash: bac0b745af780a6171e0ed230e874dd3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sprites
@@ -288,7 +285,7 @@ ScriptsOnlyBuild:
       Hash: ab8e5d0ed20792f49a9e1bf9ad3d80b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SellOre
+    className: SellResource
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -399,6 +396,12 @@ ScriptsOnlyBuild:
     className: LimbSolver2D
   - hash:
       serializedVersion: 2
+      Hash: 005ee810446953bfb366b49a1bdb484b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fuse
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -477,12 +480,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 87e42b774a04ef24e539828d35ec519f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ReturnToMain
-  - hash:
-      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -523,6 +520,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReturnToMenu
+  - hash:
+      serializedVersion: 2
+      Hash: c58610334365d9304bdb53496cb281c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Forge
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -675,7 +678,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: 3e6bccb622e0f57492d0ac9460ee13b4
+      Hash: b46182dcf3fdce2b73c61b3cabcf0daf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Scroll
@@ -711,7 +714,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 828f135ceea3ef2ffadb9f67ea318d65
+      Hash: c50fc7ce086175fbe92c72a7edb2adb3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -751,8 +754,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 54f77651e4dc7036ee96fbc7654832d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwichWindows
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/MainScene.unity
-  playerPath: G:/UnityProjects/IdleMiner/Release/Idle Miner.exe
+  playerPath: E:/Unity Projects/Idle Miner/Release/Idle Miner.exe
