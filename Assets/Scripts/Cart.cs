@@ -33,7 +33,7 @@ public class Cart : MonoBehaviour
     {
         startPosition = transform.position.x;
         Time.timeScale = 1f;
-        var resourcesSprites = SpriteStorage.GetComponent<Sprites>().getResourceSprites(ResType);
+        var resourcesSprites = SpriteStorage.GetComponent<Sprites>().getCartSprites(ResType);
         fullSprite = resourcesSprites[0];
         halfSprite = resourcesSprites[1];
         quaterSprite = resourcesSprites[2];

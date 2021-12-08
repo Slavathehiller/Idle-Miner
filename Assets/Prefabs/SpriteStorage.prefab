@@ -60,3 +60,10 @@ MonoBehaviour:
   Quarter_Diamond: {fileID: 21300000, guid: d29dfb9cb2e5a294293c2e63ef9384b9, type: 3}
   Idle_Forge: {fileID: 21300000, guid: 12a20d8450170844998becdda41162e5, type: 3}
   Busy_Forge: {fileID: 21300000, guid: f530ed16655a52f42934f0aa9506f0c7, type: 3}
+  Coal: {fileID: 21300000, guid: e4591b24dff3f1b45bf29057b466d4ec, type: 3}
+  IronOre: {fileID: 21300000, guid: c6fdda0e043c8c245a8749727e8d8668, type: 3}
+  GoldOre: {fileID: 21300000, guid: dd06e804f5362b049adc383ef7839f99, type: 3}
+  Diamond: {fileID: 21300000, guid: efdc323eb2a4a834d9fb325d06491dba, type: 3}
+  IronBar: {fileID: 21300000, guid: a3222d106a425d54dbdf29aa4225dc84, type: 3}
+  GoldBar: {fileID: 21300000, guid: 0ffd7e826a6b09b4bb98bdcc516fea25, type: 3}
+  Brilliant: {fileID: 21300000, guid: d3d04df8e5df1b84cb41aec09278504b, type: 3}

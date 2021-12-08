@@ -21,8 +21,15 @@ public class Sprites : MonoBehaviour
     public Sprite Quarter_Diamond;
     public Sprite Idle_Forge;
     public Sprite Busy_Forge;
+    public Sprite Coal;
+    public Sprite IronOre;
+    public Sprite GoldOre;
+    public Sprite Diamond;
+    public Sprite IronBar;
+    public Sprite GoldBar;
+    public Sprite Brilliant;
 
-    public Sprite[] getResourceSprites(int resourceNumber) 
+    public Sprite[] getCartSprites(int resourceNumber) 
     {
         switch (resourceNumber) 
         {
@@ -38,6 +45,11 @@ public class Sprites : MonoBehaviour
                 return null;
         }
         
+    }
+
+    public Sprite[] getResourceSprites()
+    {
+        return new Sprite[7] { Coal, IronOre, GoldOre, Diamond, IronBar, GoldBar, Brilliant};
     }
 
 }
