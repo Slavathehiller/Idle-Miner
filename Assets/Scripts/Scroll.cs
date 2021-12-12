@@ -7,7 +7,8 @@ public class Scroll : MonoBehaviour
     public GameObject ScrollingObject;
 
 
-    public float highTop = -6.5f;
+    float highTop = -6.5f;
+    float lowBottom = 20f;
 
     void Start()
     {
@@ -29,6 +30,9 @@ public class Scroll : MonoBehaviour
 
     public void ScrollDown()
     {
-        ScrollingObject.transform.Translate(new Vector3(0, 5), Space.World);
+        if (ScrollingObject.gameObject.transform.position.y < lowBottom)
+        {
+            ScrollingObject.transform.Translate(new Vector3(0, 5), Space.World);
+        }
     }
 }

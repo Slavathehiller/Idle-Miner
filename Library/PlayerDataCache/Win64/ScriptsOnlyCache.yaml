@@ -45,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/MainScene.unity:
@@ -75,37 +76,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1926}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2190}
     - Class: 114
-      Script: {instanceID: 2206}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2270}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3202}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3454}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 4010}
+      Script: {instanceID: 4022}
     - Class: 114
-      Script: {instanceID: 5006}
+      Script: {instanceID: 4028}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 68458}
+      Script: {instanceID: 5026}
+    - Class: 114
+      Script: {instanceID: 5472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -144,21 +147,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 2270}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2850}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3082}
+      Script: {instanceID: 3100}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3260}
     - Class: 114
-      Script: {instanceID: 3274}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3454}
+      Script: {instanceID: 3472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,22 +183,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
+      Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
-    className: Text
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -276,7 +273,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: bac0b745af780a6171e0ed230e874dd3
+      Hash: 347fb11ac694dcfc4d5fc5adf582ed27
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sprites
@@ -292,6 +289,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -456,7 +459,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: a5b80af8eb6b11a7d125c515f50c714f
+      Hash: c20debf5d15b150892efc0371f0318f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BuildBridge
@@ -522,7 +525,7 @@ ScriptsOnlyBuild:
     className: ReturnToMenu
   - hash:
       serializedVersion: 2
-      Hash: c58610334365d9304bdb53496cb281c7
+      Hash: abd33a15b65fd6e51a2b70c84c708120
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Forge
@@ -654,6 +657,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 54f77651e4dc7036ee96fbc7654832d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwichWindows
+  - hash:
+      serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -678,7 +687,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: b46182dcf3fdce2b73c61b3cabcf0daf
+      Hash: 3e6bccb622e0f57492d0ac9460ee13b4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Scroll
@@ -754,12 +763,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 54f77651e4dc7036ee96fbc7654832d1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SwichWindows
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity

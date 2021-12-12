@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildBridge : MonoBehaviour
 {
     public GameObject Bridge_Object;
     public GameObject SpriteStorage;
     public GameObject Cart;
-    public int CartNumber;
     private BoxCollider2D boxCollider;
+    public Text buildPrice;
 
     private void OnMouseDown()
     {
@@ -20,13 +21,14 @@ public class BuildBridge : MonoBehaviour
 
     private int BuildPrice()
     {
-        return CartNumber * 8;
+        return Cart.GetComponent<Cart>().CartNumber * 8;
     }
 
 
     private void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider = gameObject.GetComponent<BoxCollider2D>();
+        buildPrice.text = BuildPrice().ToString();
     }
 
     private void Update()
