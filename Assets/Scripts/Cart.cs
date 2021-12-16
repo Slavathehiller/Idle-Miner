@@ -15,12 +15,16 @@ public class Cart : MonoBehaviour
     float startPosition;
     float endPosition = 6.7f;
 
-    float cartSpeed = 4f;
+    public float cartSpeed = 4f;
+    public int cartSpeedLvl = 0;
     public float timeToLoad = 2f;
-    const float timeToUnload = 1f;
+    public int timeToLoadLvl = 0;
+    public float timeToUnload = 1f;
+    public int timeToUnloadLvl = 0;
     float loadingDuration = 0f;
     int moveDirection = moveReady;
     public int cartCapacity = 5;
+    public int cartCapacityLvl = 0;
     public int ResType;
     public GameObject SpriteStorage;
 
@@ -37,6 +41,7 @@ public class Cart : MonoBehaviour
         fullSprite = resourcesSprites[0];
         halfSprite = resourcesSprites[1];
         quaterSprite = resourcesSprites[2];
+        Industry.Carts[CartNumber] = this;
     }
 
     private void OnMouseDown()
@@ -72,7 +77,6 @@ public class Cart : MonoBehaviour
                 moveDirection = moveLoad;
             }
             else
-                //transform.position = Vector3.MoveTowards(transform.position, endPosition, cartSpeed * Time.deltaTime);
                 transform.Translate(new Vector3(MoveDistance, 0, 0));
         }
 
@@ -115,6 +119,34 @@ public class Cart : MonoBehaviour
                 
             }
         }
+    }
 
+    public void Upgrade_Mining_Speed()
+    {
+        timeToLoadLvl++;
+        timeToLoad *= 0.8f;
+    }
+
+    public void Upgrade_Moving_Speed()
+    {
+        cartSpeedLvl++;
+        cartSpeed *= 1.2f;
+    }
+
+    public void Upgrade_Size()
+    {
+        cartCapacityLvl++;
+        cartCapacity += cartCapacityLvl * 8;
+    }
+
+    public void Upgrade_Unloading_Speed()
+    {
+        timeToUnloadLvl++;
+        timeToUnload *= 0.8f;
+    }
+
+    public void Buy_Auto()
+    {
+        
     }
 }

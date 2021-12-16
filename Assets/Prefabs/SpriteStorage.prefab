@@ -67,3 +67,5 @@ MonoBehaviour:
   IronBar: {fileID: 21300000, guid: a3222d106a425d54dbdf29aa4225dc84, type: 3}
   GoldBar: {fileID: 21300000, guid: 0ffd7e826a6b09b4bb98bdcc516fea25, type: 3}
   Brilliant: {fileID: 21300000, guid: d3d04df8e5df1b84cb41aec09278504b, type: 3}
+  Upgrade_Enabled: {fileID: 21300000, guid: 87d5df311614dc74289918585acf2068, type: 3}
+  Upgrade_Disabled: {fileID: 21300000, guid: 124d291c27fb78c46a0ff34c932c067d, type: 3}

@@ -10,12 +10,14 @@ public class BuildBridge : MonoBehaviour
     public GameObject Cart;
     private BoxCollider2D boxCollider;
     public Text buildPrice;
+    public GameObject Upgrade_Button;
 
     private void OnMouseDown()
     {
         Stash.CoinsCount -= BuildPrice();
         Bridge_Object.GetComponent<SpriteRenderer>().sprite = SpriteStorage.GetComponent<Sprites>().Builded_Bridge;
         Cart.SetActive(true);
+        Upgrade_Button.SetActive(true);
         Destroy(gameObject);
     }
 

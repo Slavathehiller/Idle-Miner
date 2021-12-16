@@ -28,6 +28,8 @@ public class Sprites : MonoBehaviour
     public Sprite IronBar;
     public Sprite GoldBar;
     public Sprite Brilliant;
+    public Sprite Upgrade_Enabled;
+    public Sprite Upgrade_Disabled;
 
     public Sprite[] getCartSprites(int resourceNumber) 
     {
