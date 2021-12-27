@@ -27,6 +27,9 @@ public class Cart : MonoBehaviour
     public int cartCapacityLvl = 0;
     public int ResType;
     public GameObject SpriteStorage;
+    public bool isAuto;
+    public int autoCost = 1000;
+    
 
     public Sprite emptySprite;
     Sprite fullSprite;
@@ -48,9 +51,14 @@ public class Cart : MonoBehaviour
     {
         if (moveDirection == moveReady)
         {
-            moveDirection = moveForward;
-            GetComponent<Animator>().enabled = true;
+            CartGo();
         }
+    }
+
+    private void CartGo()
+    {
+        moveDirection = moveForward;
+        GetComponent<Animator>().enabled = true;
     }
 
     void Update()
@@ -119,6 +127,10 @@ public class Cart : MonoBehaviour
                 
             }
         }
+        if(moveDirection == moveReady && isAuto)
+        {
+            CartGo();
+        }
     }
 
     public void Upgrade_Mining_Speed()
@@ -147,6 +159,6 @@ public class Cart : MonoBehaviour
 
     public void Buy_Auto()
     {
-        
+        isAuto = true;
     }
 }

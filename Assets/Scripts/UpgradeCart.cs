@@ -23,7 +23,8 @@ public class UpgradeCart : MonoBehaviour
     private Button Unloading_Speed_Button;
     private Slider Unloading_Speed_Slider;
 
-    private Button Buy_Auto;
+    private Button Buy_Auto_Button;
+    public Image CheckIsAuto;
 
 
 
@@ -50,7 +51,7 @@ public class UpgradeCart : MonoBehaviour
         Unloading_Speed_Slider = GameObject.Find("Unloading_Speed_Slider").GetComponent<Slider>();
         Unloading_Speed_Slider.enabled = false;
 
-        Buy_Auto = GameObject.Find("Buy_Auto").GetComponent<Button>();
+        Buy_Auto_Button = GameObject.Find("Buy_Auto").GetComponent<Button>();
     }
 
     private int get_Upgrade_Mining_Speed_Cost()
@@ -62,8 +63,7 @@ public class UpgradeCart : MonoBehaviour
         var cart = getCart();
         cart.Upgrade_Mining_Speed();
         Mining_Speed_Slider.value = cart.timeToLoadLvl / MaxLvl;
-        var cost = get_Upgrade_Mining_Speed_Cost();
-        Stash.CoinsCount -= cost;
+        Stash.CoinsCount -= get_Upgrade_Mining_Speed_Cost();
     }
 
     private int get_Upgrade_Moving_Speed_Cost()
@@ -75,8 +75,7 @@ public class UpgradeCart : MonoBehaviour
         var cart = getCart();
         cart.Upgrade_Moving_Speed();
         Moving_Speed_Slider.value = cart.cartSpeedLvl / MaxLvl;
-        var cost = get_Upgrade_Moving_Speed_Cost();
-        Stash.CoinsCount -= cost;
+        Stash.CoinsCount -= get_Upgrade_Moving_Speed_Cost();
     }
 
     private int get_Upgrade_Size_Cost()
@@ -88,8 +87,7 @@ public class UpgradeCart : MonoBehaviour
         var cart = getCart();
         cart.Upgrade_Size();
         Size_Slider.value = cart.cartCapacityLvl / MaxLvl;
-        var cost = get_Upgrade_Size_Cost();
-        Stash.CoinsCount -= cost;
+        Stash.CoinsCount -= get_Upgrade_Size_Cost();
     }
 
     private int get_Upgrade_Unloading_Speed_Cost()
@@ -101,8 +99,19 @@ public class UpgradeCart : MonoBehaviour
         var cart = getCart();
         cart.Upgrade_Unloading_Speed();
         Unloading_Speed_Slider.value = cart.timeToUnloadLvl / MaxLvl;
-        var cost = get_Upgrade_Unloading_Speed_Cost();
-        Stash.CoinsCount -= cost;
+        Stash.CoinsCount -= get_Upgrade_Unloading_Speed_Cost();
+    }
+    
+    private int get_Auto_Cost()
+    {
+        return getCart().autoCost * (getCart().CartNumber + 1);
+    }
+    public void Buy_Auto()
+    {
+        var cart = getCart();
+        cart.Buy_Auto();
+        CheckIsAuto.enabled = true;
+        Stash.CoinsCount -= get_Auto_Cost();
     }
 
 
@@ -135,6 +144,8 @@ public class UpgradeCart : MonoBehaviour
             UpdateCartInfo(Moving_Speed_Button, Moving_Speed_Slider, cart.cartSpeedLvl, get_Upgrade_Moving_Speed_Cost());
             UpdateCartInfo(Size_Button, Size_Slider, cart.cartCapacityLvl, get_Upgrade_Size_Cost());
             UpdateCartInfo(Unloading_Speed_Button, Unloading_Speed_Slider, cart.timeToUnloadLvl, get_Upgrade_Unloading_Speed_Cost());
+            CheckIsAuto.gameObject.SetActive(cart.isAuto);
+            Buy_Auto_Button.gameObject.SetActive(Stash.CoinsCount >= get_Auto_Cost() && !cart.isAuto); 
         }
     }
 }
