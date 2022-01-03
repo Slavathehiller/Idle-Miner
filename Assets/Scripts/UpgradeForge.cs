@@ -26,7 +26,7 @@ public class UpgradeForge : MonoBehaviour
 
     private int getUpgradeCost()
     {
-        return forge.UpgradeLvl * UpgradeCost;
+        return (forge.UpgradeLvl + 1) * UpgradeCost;
     }
 
     public void Upgrade()

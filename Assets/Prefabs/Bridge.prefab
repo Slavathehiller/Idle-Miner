@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cart: {fileID: 3929843632369497260}
-  InfoPanel: {fileID: 0}
+  CartInfoPanel: {fileID: 0}
 --- !u!1 &3057191654819409386
 GameObject:
   m_ObjectHideFlags: 0
