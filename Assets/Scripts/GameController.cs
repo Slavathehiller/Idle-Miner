@@ -31,12 +31,12 @@ public class GameController : MonoBehaviour
         SetAmount(GoldBarCountText, ResourceType.GoldBar);
         SetAmount(BrilliantCountText, ResourceType.Brilliant);
         if (MoneyCountText != null)
-            MoneyCountText.text = Stash.CoinsCount.ToString();
+            MoneyCountText.text = TextHelper.ShortNumber(Stash.CoinsCount);
     }
 
     private void SetAmount(Text text, int resIndex)
     {
         if(text != null)
-            text.text = Stash.ResourceCount[resIndex].ToString();
+            text.text = TextHelper.ShortNumber(Stash.ResourceCount[resIndex]);
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\UpgradeForge.cs" />
     <Compile Include="Assets\Scripts\ResourceType.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Texthelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
