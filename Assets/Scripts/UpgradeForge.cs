@@ -22,6 +22,7 @@ public class UpgradeForge : MonoBehaviour
             upgradeImages[i].SetActive(i <= forge.UpgradeLvl - 1);
         }
         UpgradeButton.enabled = Stash.CoinsCount >= getUpgradeCost() && !forge.isFusing;
+        UpgradeButton.gameObject.SetActive(forge.UpgradeLvl < MaxLvl);
     }
 
     private int getUpgradeCost()
@@ -31,7 +32,7 @@ public class UpgradeForge : MonoBehaviour
 
     public void Upgrade()
     {
-        if (Stash.CoinsCount >= getUpgradeCost() && !forge.isFusing)
+        if (Stash.CoinsCount >= getUpgradeCost() && !forge.isFusing && forge.UpgradeLvl < MaxLvl)
         {
             Stash.CoinsCount -= getUpgradeCost();
             forge.Upgrade();

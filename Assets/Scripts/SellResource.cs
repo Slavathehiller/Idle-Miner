@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class SellResource : MonoBehaviour
 {
-    public int ResType;
-    public void OnClick()
+    public SellResourceWindow sellResourceWindow;
+    public int resType;
+
+    void Start()
     {
-        Stash.CoinsCount += Stash.ResourceCount[ResType] * Stash.ResourcePrices[ResType];
-        Stash.ResourceCount[ResType] = 0;
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void Sell()
+    {
+        sellResourceWindow.SellResource(resType);
     }
 }
