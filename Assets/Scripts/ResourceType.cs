@@ -12,5 +12,10 @@ public static class ResourceType
     public static int GoldBar = 5;
     public static int Brilliant = 6;
     public static int Coins = 7;
-
 }
+
+public static class Resource
+{
+    public static string[] Name = new string[8] { "Coal", "Iron Ore", "Gold Ore", "Diamond", "Iron Bar", "Gold Bar", "Brillant", "Money" };
+}
+

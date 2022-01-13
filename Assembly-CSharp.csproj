@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SellResourceWindow.cs" />
     <Compile Include="Assets\Scripts\Cart.cs" />
     <Compile Include="Assets\Scripts\Sprites.cs" />
     <Compile Include="Assets\Scripts\SellAllResources.cs" />
@@ -71,9 +72,9 @@
     <Compile Include="Assets\Scripts\Stash.cs" />
     <Compile Include="Assets\Scripts\UpgradeForge.cs" />
     <Compile Include="Assets\Scripts\ResourceType.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\SellResource.cs" />
-    <Compile Include="Assets\Scripts\SellResourceWindow.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\ShowWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
