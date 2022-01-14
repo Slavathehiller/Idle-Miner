@@ -11,16 +11,23 @@ ScriptsOnlyBuild:
     - LoadGame
     - ReturnToMenu
     - Scroll
+    - SellAllResources
     - SellResource
+    - SellResourceWindow
+    - ShowWindow
     - Sprites
     - SwitchWindows
     - UpgradeCart
+    - UpgradeForge
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -75,43 +82,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1460}
+      Script: {instanceID: 1558}
     - Class: 114
-      Script: {instanceID: 1718}
+      Script: {instanceID: 1752}
     - Class: 114
-      Script: {instanceID: 1908}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 2172}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2676}
+      Script: {instanceID: 2240}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3220}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3372}
     - Class: 114
-      Script: {instanceID: 3452}
+      Script: {instanceID: 3482}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4010}
+      Script: {instanceID: 4042}
     - Class: 114
-      Script: {instanceID: 4462}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 4784}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 5010}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 5456}
+      Script: {instanceID: 4824}
+    - Class: 114
+      Script: {instanceID: 5050}
+    - Class: 114
+      Script: {instanceID: 5144}
+    - Class: 114
+      Script: {instanceID: 5496}
+    - Class: 114
+      Script: {instanceID: 5498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,21 +165,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 1460}
+      Script: {instanceID: 1558}
     - Class: 114
-      Script: {instanceID: 2676}
+      Script: {instanceID: 2714}
     - Class: 114
-      Script: {instanceID: 2848}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3240}
+      Script: {instanceID: 3278}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 3334}
+      Script: {instanceID: 3372}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -192,16 +207,16 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -270,6 +285,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 4f1024125a81479bc5261570f668e51c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SellResourceWindow
+  - hash:
+      serializedVersion: 2
       Hash: 47ffbeb7affac68db4c8ba6358db424c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -291,7 +312,7 @@ ScriptsOnlyBuild:
       Hash: ab8e5d0ed20792f49a9e1bf9ad3d80b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SellResource
+    className: SellAllResources
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -402,7 +423,7 @@ ScriptsOnlyBuild:
     className: LimbSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 005ee810446953bfb366b49a1bdb484b
+      Hash: 7168371c834c8191c55e113b3c846ea3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Fuse
@@ -534,7 +555,7 @@ ScriptsOnlyBuild:
     className: ReturnToMenu
   - hash:
       serializedVersion: 2
-      Hash: abd33a15b65fd6e51a2b70c84c708120
+      Hash: 56531de3fd6481c223ba716d12e653c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Forge
@@ -622,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CartInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 9b29dd0a3ff7859d82a2e1d8d2676b7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowWindow
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -726,6 +753,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 92f8b7e611a3ff888f73c541d2387b6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpgradeForge
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -736,6 +769,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 104b47ebd9f845778a5d373da520d0b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SellResource
   - hash:
       serializedVersion: 2
       Hash: c50fc7ce086175fbe92c72a7edb2adb3
