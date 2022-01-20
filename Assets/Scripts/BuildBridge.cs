@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class BuildBridge : MonoBehaviour
@@ -14,6 +15,13 @@ public class BuildBridge : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            if (EventSystem.current.currentSelectedGameObject?.tag == "UI")
+            {
+                return;
+            }
+        }
         Stash.CoinsCount -= BuildPrice();
         Bridge_Object.GetComponent<SpriteRenderer>().sprite = SpriteStorage.GetComponent<Sprites>().Builded_Bridge;
         Cart.SetActive(true);
